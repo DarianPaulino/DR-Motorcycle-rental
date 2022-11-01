@@ -1,110 +1,122 @@
 <html>
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
-    <link href="https://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <style>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
-*{margin:0;padding:0;}
-html
-body{
-  background:rgb(89, 90, 89);
-  font-family:'Open Sans',sans-serif;
-}
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+  <link href="https://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
-.button{
-  width:100px;
-  background:#2f3130;
-  display:block;
-  margin:0 auto;
-  margin-top:1%;
-  padding:10px;
-  text-align:center;
-  text-decoration:none;
-  color:#fff;
-  cursor:pointer;
-  transition:background .3s;
-  -webkit-transition:background .3s;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-.button:hover{
-  background:#2288bb;
-}
+  html body {
+    color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0))no-repeat, url(images/squad2.jpg);
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+  }
 
-#signup{
-  width:400px;
-  margin:0 auto;
-  transition:opacity 1s;
-  -webkit-transition:opacity 1s;
-}
+  .button {
+    width: 100px;
+    background: #ffffff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+  }
 
-#triangle{
-  width:0;
-  border-top:0px solid transparent;
-  border-right:12px solid transparent;
-  border-bottom:12px solid #6dab74;
-  border-left:12px solid transparent;
-  margin:0 auto;
-}
+  .button:hover {
+    background: greenyellow;
+  }
 
-#signup h1{
-  background:#619e60;
-  padding:20px 0;
-  font-size:140%;
-  font-weight:300;
-  margin: 0;
-  text-align:center;
-  color:#fff;
-}
+  #signup {
+    width: 400px;
+    margin: 0 auto;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+  }
 
-form{
-  background:#f0f0f0;
-  padding:4% 4%;
-}
+  #triangle {
+    width: 0;
+    border-top: 0px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid greenyellow;
+    border-left: 12px solid transparent;
+    margin: 0 auto;
+  }
 
-input[type="email"], input[type="password"], input[type="text"]{
-  width:92%;
-  background:#fff;
-  margin-bottom:4%;
-  border:1px solid #ccc;
-  padding:4%;
-  font-family:'Open Sans',sans-serif;
-  font-size:95%;
-  color:#555;
-}
+  #signup h1 {
+    background: yellowgreen;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+    color: white;
+  }
 
-input[type="submit"]{
-  width:100%;
-  background:#5eb67e;
-  border:0;
-  padding:4%;
-  margin:0;
-  font-family:'Open Sans',sans-serif;
-  font-size:100%;
-  color:#fff;
-  cursor:pointer;
-  transition:background .3s;
-  -webkit-transition:background .3s;
-}
+  form {
+    background: #f0f0f0;
+    padding: 4% 4%;
+  }
 
-input[type="submit"]:hover{
-  background:#5baf6c;
-} </style>
-  <body>
-    <span href="#" class="button" id="toggle-signup">Sign Up</span>
-    <div id="signup">
-        <div id="triangle"></div>
-        <h1>*New Member</h1>
-        <form>
-            <input type="email" placeholder="Email" />
-            <input type="text" placeholder="UserName" />
-            <input type="password" placeholder="Password" />
-            <input type="password" placeholder="Confirm Password" />
-            <input type="submit" value="Sign Up" />
-        </form>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-  </body>
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 92%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 4%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 95%;
+    color: #555;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background: yellowgreen;
+    border: 0;
+    padding: 4%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    color: #fff;
+    cursor: pointer;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+  }
+
+  input[type="submit"]:hover {
+    background: #5baf6c;
+  }
+</style>
+
+<body>
+  <span href="#" class="button" id="toggle-signup">Sign Up</span>
+  <div id="signup">
+    <div id="triangle"></div>
+    <h1>*New Member</h1>
+    <form>
+      <input type="email" placeholder="Email" />
+      <input type="text" placeholder="UserName" />
+      <input type="password" placeholder="Password" />
+      <input type="password" placeholder="Confirm Password" />
+      <input type="submit" value="Sign Up" />
+    </form>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
